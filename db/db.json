@@ -2,11 +2,16 @@
     {
         "title": "Test Title",
         "text": "Test text",
-        "id": "a432"
+        "id": "1"
     },
     {
         "title": "New Note",
         "text": "This is a test",
-        "id": "e735"
+        "id": "2"
+    },
+    {
+        "title": "Example",
+        "text": "Hello",
+        "id": "29e6"
     }
 ]

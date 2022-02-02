@@ -37,13 +37,13 @@ notes.post('/notes', (req, res) => {
     }
   });
   
-  notes.delete('/notes/id', (req, res) => {
+  notes.delete('/notes/:id', (req, res) => {
     const noteId = req.params.id;
     readFromFile('./db/db.json')
       .then((data) => JSON.parse(data))
       .then((json) => {
-        var result = json.filter(function (note) {
-          return note.id !== noteId;
+        var result = json.filter( (note) => {
+          return note.id !==noteId;
         });
         
         writeToFile('./db/db.json', result);
